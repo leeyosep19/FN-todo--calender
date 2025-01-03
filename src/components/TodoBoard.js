@@ -16,7 +16,7 @@ const TodoBoard = ({ todoList, deleteItem, toggleComplete }) => {
       ) : (
         // 날짜별 할 일이 없을 때 메시지
         <p role="alert" className="no-tasks-message">
-          선택한 날짜에 할 일이 없습니다!
+          선택한 날짜에 할 일이 없습니다.
         </p>
       )}
     </div>

@@ -27,7 +27,7 @@ const LoginPage = () => {
       if (response.status === 200) {
         // 로그인 성공
         sessionStorage.setItem("token", response.data.token);
-        sessionStorage.setItem("userId", response.data.userId);   ///추가 사용자 ID 저장
+        // sessionStorage.setItem("userId", response.data.userId);   ///추가 사용자 ID 저장
         api.defaults.headers["authorization"] = "Bearer " + response.data.token;
         setError(""); // 에러 메시지 초기화
         navigate("/"); // 로그인 후 홈 페s이지로 리디렉션
